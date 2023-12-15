@@ -2,11 +2,12 @@ package com.example.movieapp.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
-import androidx.compose.ui.text.font.*
+import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
-import com.example.movieapp.R
+import com.example.moobeez.R
+
 
 val poppins = FontFamily(
     Font(R.font.poppins_bold, FontWeight.Bold)

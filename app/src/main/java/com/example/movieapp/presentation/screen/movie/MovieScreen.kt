@@ -12,7 +12,6 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.modifier.modifierLocalConsumer
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.example.movieapp.presentation.components.DescriptionMovieScreen
@@ -23,7 +22,11 @@ import com.example.movieapp.presentation.components.addList
 import com.example.movieapp.presentation.components.back
 
 @Composable
-fun MovieScreen(movieViewModel: MovieViewModel, navToDetailMovieScreen: () -> Unit, navController: NavController) {
+fun MovieScreen(
+    movieViewModel: MovieViewModel,
+    navToDetailMovieScreen: () -> Unit,
+    navController: NavController
+) {
 
     var movieSelected = movieViewModel.movieSelected.value
     MaterialTheme {
@@ -34,7 +37,12 @@ fun MovieScreen(movieViewModel: MovieViewModel, navToDetailMovieScreen: () -> Un
                 .padding(bottom = 30.dp)
         ) {
             MovieImage(movieSelected!!)
-            Column(Modifier.fillMaxSize().padding(10.dp), verticalArrangement = Arrangement.SpaceBetween) {
+            Column(
+                Modifier
+                    .fillMaxSize()
+                    .padding(10.dp),
+                verticalArrangement = Arrangement.SpaceBetween
+            ) {
                 Row(
                     modifier = Modifier
                         .fillMaxWidth()

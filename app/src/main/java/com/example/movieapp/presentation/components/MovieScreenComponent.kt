@@ -2,7 +2,6 @@ package com.example.movieapp.presentation.components
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -25,8 +24,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import coil.compose.AsyncImage
-import com.example.movieapp.R
+import com.example.moobeez.R
 import com.example.movieapp.domain.model.Movie
+import com.example.movieapp.ui.theme.Primario
 import com.example.movieapp.ui.theme.poppins
 
 @Composable
@@ -57,7 +57,7 @@ fun back(navController: NavController) {
     Icon(
         painter = painterResource(id = R.drawable.baseline_arrow_back_ios_24),
         contentDescription = "Back",
-        tint = Color.Magenta,
+        tint = Primario,
         modifier = Modifier
             .size(40.dp)
             .padding(top = 5.dp)
@@ -71,7 +71,7 @@ fun addList() {
     Icon(
         painter = painterResource(id = R.drawable.outline_bookmark_border_24),
         contentDescription = "Add",
-        tint = Color.Magenta,
+        tint = Primario,
         modifier = Modifier
             .size(40.dp)
             .padding(top = 5.dp)

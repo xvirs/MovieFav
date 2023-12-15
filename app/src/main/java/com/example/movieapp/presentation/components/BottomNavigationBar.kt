@@ -10,13 +10,14 @@ import androidx.compose.ui.graphics.Color
 import androidx.navigation.NavController
 import androidx.navigation.NavGraph.Companion.findStartDestination
 import com.example.movieapp.presentation.navegation.AppScreens
+import com.example.movieapp.ui.theme.Primario
 
 @Composable
 fun BottomNavigationBar(navController: NavController, items: List<AppScreens>) {
     val currentScreen = navController.currentDestination?.route ?: ""
     BottomNavigation(
         backgroundColor = Color.Transparent,
-        contentColor = Color.Magenta,
+        contentColor = Primario,
         modifier = Modifier.fillMaxWidth()
     ) {
         items.forEach { screen ->

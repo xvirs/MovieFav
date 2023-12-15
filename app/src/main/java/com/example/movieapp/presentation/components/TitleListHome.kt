@@ -1,5 +1,6 @@
 package com.example.movieapp.presentation.components
 
+import android.provider.CalendarContract.Colors
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -14,6 +15,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.movieapp.ui.theme.Primario
 import com.example.movieapp.ui.theme.poppins
 
 @Composable
@@ -37,10 +39,10 @@ fun TitleListHome(title: String) {
             style = TextStyle(
                 fontFamily = poppins,
                 fontWeight = FontWeight.Bold,
-                fontSize = 30.sp,
+                fontSize = 40.sp,
                 letterSpacing = 0.5.sp,
                 textAlign = TextAlign.Left,
-                color = Color.Magenta,
+                color = Primario,
             )
         )
     }

@@ -32,7 +32,7 @@ import com.example.movieapp.presentation.components.back
 @Composable
 fun DetailMovieScreen(movieViewModel: MovieViewModel,navController: NavController){
 
-    var movieSelected = movieViewModel.movieSelected.value
+    val movieSelected = movieViewModel.movieSelected.value
     MaterialTheme {
         Box(
             modifier = Modifier

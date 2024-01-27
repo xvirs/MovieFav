@@ -12,28 +12,28 @@ fun OnBoardingScreen() {
     val items = ArrayList<Page>()
     items.add(
         Page(
-            R.raw.moovie_animation,
+            R.raw.animation1,
             "Bienvenido a Moobeez",
             "En esta app podrás ver y descubrir un sin fin de películas, escribir reseñas, y seguir a otros cinéfilos"
         )
     )
     items.add(
         Page(
-            R.raw.second_page,
+            R.raw.animation2,
             "Entérate de Nuevos Lanzamientos",
             "Mantente al día con las últimas películas en la industria del cine. Explora tráilers, fechas de estreno y sinopsis de emocionantes nuevos lanzamientos."
         )
     )
     items.add(
         Page(
-            R.raw.conect_animation,
+            R.raw.animation3,
             "Conecta con Otros Cinéfilos",
             "Comparte tu pasión por el cine al conectar con otros apasionados cinéfilos. Únete a conversaciones emocionantes, comparte tus opiniones y descubre nuevas perspectivas en Moobeez."
         )
     )
     items.add(
         Page(
-            R.raw.done_animation,
+            R.raw.animation4,
             "Explora Joyas Cinematográficas",
             "¡Vamos a sumergirnos en el emocionante mundo del séptimo arte!"
         )

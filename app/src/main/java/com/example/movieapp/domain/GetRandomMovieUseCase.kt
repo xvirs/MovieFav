@@ -6,9 +6,9 @@ import javax.inject.Inject
 
 class GetRandomMovieUseCase @Inject constructor(private val popularMovieRepository: PopularMovieRepository) {
 
-    suspend operator fun invoke(): Movie? {
+    suspend operator fun invoke(): Movie {
         val movies = popularMovieRepository.getAllPopularMovie()
         val randomNumber = (movies.indices).random()
-        return movies[randomNumber]!!
+        return movies[randomNumber]
     }
 }

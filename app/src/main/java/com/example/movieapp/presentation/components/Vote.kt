@@ -16,6 +16,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.movieapp.domain.model.Movie
+import com.example.movieapp.ui.theme.AmarilloEstrella
 import com.example.movieapp.ui.theme.poppins
 
 
@@ -30,14 +31,14 @@ fun VotePopular(movie: Movie) {
             style = TextStyle(
                 fontFamily = poppins,
                 fontWeight = FontWeight.Bold,
-                fontSize = 15.sp,
+                fontSize = 16.sp,
                 letterSpacing = 0.5.sp,
                 textAlign = TextAlign.Left
             ),
             modifier = Modifier.align(Alignment.CenterVertically)
         )
         for (i in 1..5) {
-            Icon(Icons.Filled.Star, contentDescription = "Star", tint = if(i <= stars!!) Color.Yellow else Color.Gray)
+            Icon(Icons.Filled.Star, contentDescription = "Star", tint = if(i <= stars!!) AmarilloEstrella else Color.Gray)
         }
     }
 }
@@ -59,7 +60,7 @@ fun VoteEstreno(movie: Movie) {
             modifier = Modifier.align(Alignment.CenterVertically)
         )
         for (i in 1..5) {
-            Icon(Icons.Filled.Star, contentDescription = "Star", tint = if(i <= stars!!) Color.Yellow else Color.Gray, modifier = Modifier.size(20.dp))
+            Icon(Icons.Filled.Star, contentDescription = "Star", tint = if(i <= stars!!) AmarilloEstrella else Color.Gray, modifier = Modifier.size(20.dp))
         }
     }
 }

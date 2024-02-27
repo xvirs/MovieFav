@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION")
+
 package com.example.movieapp.presentation.navegation
 
 import android.net.Uri
@@ -44,7 +46,7 @@ fun AppNavigation(
 
         composable(AppScreens.Movie.route, arguments = listOf(navArgument("movie") {type = ItemNavType}))
         { navBackStackEntry ->
-            var movieSelected = navBackStackEntry.arguments?.getParcelable<Movie>("movie")
+            val movieSelected = navBackStackEntry.arguments?.getParcelable<Movie>("movie")
             requireNotNull(movieSelected)
             MovieScreen(movieViewModel,
                 navToDetailMovieScreen = {

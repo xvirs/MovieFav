@@ -1,10 +1,8 @@
-import org.jetbrains.kotlin.kapt3.base.Kapt.kapt
-
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
 
-    //Dager hilt
+//Dager hilt
     kotlin("kapt")
     id("com.google.dagger.hilt.android")
 
@@ -12,14 +10,15 @@ plugins {
     id("kotlin-parcelize")
     //Serealizacion
     kotlin("plugin.serialization") version "1.8.10"
+
 }
 
 android {
-    namespace = "com.example.movieapp"
+    namespace = "com.example.moobeez"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.movieapp"
+        applicationId = "com.example.moobeez"
         minSdk = 26
         targetSdk = 34
         versionCode = 1
@@ -126,7 +125,11 @@ dependencies {
     implementation ("androidx.window:window:1.2.0-beta01")
     implementation ("androidx.compose.material3:material3-window-size-class")
 
+    //On Boarding
+    implementation ("com.google.accompanist:accompanist-pager:0.15.0")
+
+    //Lottie
+    implementation ("com.airbnb.android:lottie-compose:5.2.0")
+
+
 }
-
-
-

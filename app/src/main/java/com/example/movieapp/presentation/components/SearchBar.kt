@@ -14,11 +14,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
+import com.example.movieapp.ui.theme.Primario
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SearchBar() {
-    Box(modifier = Modifier.padding(all = 8.dp)) {
+    Box(modifier = Modifier.padding(all = 10.dp)) {
         TextField(
             value = "",
             onValueChange = {  },
@@ -32,7 +33,7 @@ fun SearchBar() {
                 Icon(
                     imageVector = Icons.Filled.Search,
                     contentDescription = "Search",
-                    tint = Color.Black,
+                    tint = Primario,
                 )
             },
             modifier = Modifier.fillMaxWidth(),
